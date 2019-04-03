@@ -12,11 +12,35 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        findViewById(R.id.btn_fig1).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, fig1.class));
+        View.OnClickListener onClickListener = new HandleDemoLinks();
+        findViewById(R.id.btn_fig1).setOnClickListener(onClickListener);
+        findViewById(R.id.btn_fig4).setOnClickListener(onClickListener);
+        findViewById(R.id.btn_fig5).setOnClickListener(onClickListener);
+        findViewById(R.id.btn_fig6).setOnClickListener(onClickListener);
+    }
+
+    class HandleDemoLinks implements View.OnClickListener{
+
+        @Override
+        public void onClick(View v) {
+            Class dest = null;
+            switch (v.getId()) {
+                case R.id.btn_fig1:
+                    dest = fig1.class;
+                    break;
+                case R.id.btn_fig4:
+                    dest = fig4.class;
+                    break;
+                case R.id.btn_fig5:
+                    dest = fig5.class;
+                    break;
+                case R.id.btn_fig6:
+                    dest = fig6.class;
+                    break;
             }
-        });
+            if (dest!=null) {
+                startActivity(new Intent(MainActivity.this, dest));
+            }
+        }
     }
 }
