@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btn_fig4).setOnClickListener(onClickListener);
         findViewById(R.id.btn_fig5).setOnClickListener(onClickListener);
         findViewById(R.id.btn_fig6).setOnClickListener(onClickListener);
+        findViewById(R.id.btn_fig7).setOnClickListener(onClickListener);
     }
 
     class HandleDemoLinks implements View.OnClickListener{
@@ -36,6 +37,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_fig6:
                     dest = fig6.class;
+                    break;
+                    case R.id.btn_fig7:
+                    dest = fig7.class;
                     break;
             }
             if (dest!=null) {
