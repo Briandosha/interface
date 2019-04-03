@@ -20,6 +20,7 @@
             android:layout_height="wrap_content">
             <TextView
                 android:id="@+id/txt_1"
+                android:text="Sunday 03/02/2019"
                 android:layout_width="208dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="8dp"
@@ -33,6 +34,7 @@
 
             <TextView
                 android:id="@+id/txt_2"
+                android:text="Not participating"
                 android:layout_width="88dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="59dp"
@@ -43,6 +45,7 @@
 
             <TextView
                 android:id="@+id/txt_3"
+                android:text="Monday 06/02/2019"
                 android:layout_width="208dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="8dp"
@@ -56,6 +59,7 @@
 
             <TextView
                 android:id="@+id/txt_4"
+                android:text="$0.1"
                 android:layout_width="88dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="172dp"
@@ -66,6 +70,7 @@
 
             <TextView
                 android:id="@+id/txt_5"
+                android:text="Wednesday 12/02/2019"
                 android:layout_width="208dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="8dp"
@@ -79,6 +84,7 @@
 
             <TextView
                 android:id="@+id/txt_6"
+                android:text="Not participating"
                 android:layout_width="88dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="292dp"
@@ -88,6 +94,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
+                android:text="Friday 03/02/2019"
                 android:id="@+id/txt_7"
                 android:layout_width="208dp"
                 android:layout_height="50dp"
@@ -102,6 +109,7 @@
 
             <TextView
                 android:id="@+id/txt_8"
+                android:text="$0.11"
                 android:layout_width="88dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="396dp"
@@ -112,6 +120,7 @@
         </android.support.constraint.ConstraintLayout>
     </ScrollView>
     <TextView
+        android:text="Accumulated: $0.21"
         android:id="@+id/txt_accum"
         android:layout_width="198dp"
         android:layout_height="50dp"
