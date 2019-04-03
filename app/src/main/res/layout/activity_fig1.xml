@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fig1">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:src="@drawable/ic_emoji_nation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EDD5D4D4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
+            android:background="#fff"
+            android:padding="25dp"
+            android:text="Welcome to Journal and Mood Tracking "
+            android:textAlignment="center"
+            android:textColor="#150517"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="@id/container" />
+
+        <EditText
+            android:id="@+id/edt_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/edittext_border"
+            android:hint="username"
+            android:inputType="text"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@id/container"
+            app:layout_constraintStart_toStartOf="@id/container"
+            app:layout_constraintTop_toTopOf="@id/container" />
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/edittext_border"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@id/container"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/container"
+            app:layout_constraintTop_toBottomOf="@+id/edt_username" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/button_background"
+            android:text="Login"
+            android:textColor="#fff"
+            app:layout_constraintStart_toStartOf="@id/container"
+            app:layout_constraintTop_toBottomOf="@+id/edt_password" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/btn_login">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account?"
+                android:textAlignment="textEnd" />
+
+            <TextView
+                android:id="@+id/register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Register"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorPrimary" />
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>
