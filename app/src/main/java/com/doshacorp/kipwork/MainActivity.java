@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
         View.OnClickListener onClickListener = new HandleDemoLinks();
         findViewById(R.id.btn_fig1).setOnClickListener(onClickListener);
+        findViewById(R.id.btn_fig3).setOnClickListener(onClickListener);
         findViewById(R.id.btn_fig4).setOnClickListener(onClickListener);
         findViewById(R.id.btn_fig5).setOnClickListener(onClickListener);
         findViewById(R.id.btn_fig6).setOnClickListener(onClickListener);
@@ -28,6 +29,9 @@ public class MainActivity extends AppCompatActivity {
             switch (v.getId()) {
                 case R.id.btn_fig1:
                     dest = fig1.class;
+                    break;
+                    case R.id.btn_fig3:
+                    dest = fig3.class;
                     break;
                 case R.id.btn_fig4:
                     dest = fig4.class;
