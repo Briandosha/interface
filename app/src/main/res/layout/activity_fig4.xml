@@ -20,6 +20,9 @@
 
         <TextView
             android:id="@+id/editText"
+            android:ellipsize="end"
+            android:text="Activity: Watch movies with friends\n
+Motivation: Want to socialize"
             android:layout_width="222dp"
             android:layout_height="50dp"
             android:layout_marginStart="28dp"
@@ -57,6 +60,9 @@
 
         <TextView
             android:id="@+id/txt_mem2"
+            android:ellipsize="end"
+            android:text="Activity: Studying for the tests\n
+Motivation: Want to excel"
             android:layout_width="222dp"
             android:layout_height="50dp"
             android:layout_marginStart="28dp"
@@ -94,6 +100,9 @@
 
         <TextView
             android:id="@+id/txt_mem3"
+            android:ellipsize="end"
+            android:text="Activity: Watch movies with family\n
+Motivation: Want to socialize"
             android:layout_width="222dp"
             android:layout_height="50dp"
             android:layout_marginStart="28dp"
